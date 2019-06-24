@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    overflow: hidden;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-------------------------- Header */
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    top: 0;
+    z-index: 10;
+    background: rgb(20, 20, 20, 0.8);
+}
+
+.strip {
+    height: 3px;
+    width: 50%;
+    background: rgb(228, 216, 107);
+    border: none;
+    margin: 7%;
+    padding: 0;
+}
+
+#navigation:hover .strip {
+    animation: move 0.3s linear;
+}
+
+#navigation {
+    float: left;
+    height: 80%;
+    width: 5%;
+    margin-left: 5%;
+    margin-top: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#navigation_ol {
+    position: absolute;
+    z-index: 3;
+    top: -0.5vw;
+    left: -25vw;
+    width: 20vw;
+    height: 100vh;
+    display: none;
+    background: rgb(51, 45, 45);
+    margin: 0;
+    padding: 0;
+    padding-top: 10vh;
+
+}
+
+.menu_item {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: rgb(206, 205, 209);
+    font-weight: 500;
+    transition: 0.5s ease-in all;
+}
+
+.menu_item:hover {
+    background: rgb(66, 65, 66);
+    color: orangered;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    margin-right: 5%;
+    float: right;
+}
+
+.logotype {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* -------------------------end of header */
+
+
+
+
+/* -----------------body(main) */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url('images/backgrund.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85vh;
+}
+
+.geo_place {
+    position: absolute;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 1%;
+    bottom: 10%;
+    left: 10%;
+    opacity: 0;
+    background: rgb(20, 20, 20, 0.8);
+}
+
+.big_logo {
+    width: 20vw;
+    height: 10vw;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+/* -----------end of main ------------------*/
+
+.main2 {
+    width: 100%;
+    height: 100vh;
+    background: url('images/background2.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.slider {
+    width: 40%;
+    height: 75%;
+    margin-left: 20%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.photo_conteiner {
+    height: 100%;
+    width: 49%;
+    overflow: hidden;
+}
+
+.interior_photo,
+.interior_photo2 {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.describe {
+    position: absolute;
+    bottom: 16%;
+    right: 12%;
+    color: black;
+    background: white;
+    width: 30%;
+    height: 65%;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+}
+
+h4 {
+    font-size: 2em;
+    margin: 15px 15px;
+    font-weight: 400;
+}
+
+
+/* --------------end of main2----------- */
+
+
+
+/* -------------- main3----------- */
+
+.main3 {
+    width: 100%;
+    height: 100vh;
+    background: url("images/background3.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-menu,
+.bar-menu,
+.desserts-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 25vw;
+    margin-right: 2%;
+    border-radius: 10px;
+    transition: .3s ease all;
+}
+
+.main-menu {
+    background: url("images/menufood.jpg");
+    background-size: cover;
+}
+
+.menu-heading {
+    width: 80%;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 5px 6px #907c75;
+    background: rgb(20, 20, 20, 0.8);
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 1%;
+    font-size: 3vw;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(161, 121, 121, 1);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(161, 121, 121, 1);
+    box-shadow: 0px 0px 15px 2px rgba(161, 121, 121, 1);
+}
+
+.goto-menu-button {
+    width: 10vw;
+    height: 5vh;
+    background: rgb(20, 20, 20, 0.8);
+    text-align: center;
+    margin-top: 20%;
+    color: #ffffff;
+    text-shadow: 3px 5px 6px #907c75;
+    box-sizing: border-box;
+    padding: 1%;
+    font-size: 1vw;
+    border: 0px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(163, 121, 163, 1);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(163, 121, 163, 1);
+    box-shadow: 0px 0px 15px 2px rgba(163, 121, 163, 1);
+    transition: .3s ease all;
+}
+
+.goto-menu-button:hover {
+    width: 11vw;
+}
+
+.goto-menu-button:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.bar-menu {
+    background: url("images/menubar.jpg");
+    background-size: cover;
+}
+
+.desserts-menu {
+    background: url("images/menudesserts.jpg");
+    background-size: cover;
+    margin-right: 0%;
+}
+
+.main-menu:hover,
+.bar-menu:hover,
+.desserts-menu:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+/* --------------end of main3----------- */
+
+
+
+/* -------------- main4----------- */
+.main4 {
+    width: 100%;
+    height: 100vh;
+    background: url(images/background5.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 18px;
+}
+
+.shadow-block{
+    width: 100%;
+    height: 100%;
+    background: rgb(15, 15, 15, 0.5);
+}
+
+.google_map {
+    width: 50%;
+    height: 60vh;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    float: left;
+}
+
+.dop_info {
+    width: 30%;
+    height: 65vh;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.small-logo-conteiner{
+    width: 40%;
+    height: 15%;
+
+}
+
+.small-logo{
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------end of main4----------- */
+
+
+
+/* -------------------------------end of body(main) */
+
+
+/* ---------contact ----------*/
+
+.contact-main{
+    width: 100%;
+    height: 100vh;
+    background: url(images/background5.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+}
+
+/* ---------end of contact ----------*/
+
+/* ---------menu ----------*/
+
+.menu-main{
+    width: 100%;
+    height: 100vh;
+    background: url("images/background3.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+/* ---------end of menu ----------*/
+
+
+
+
+
+
+@keyframes geo_place_animator {
+    0% {
+        transform: translateX(-30vw);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slider_animator {
+    0% {
+        transform: translateX(-60vw);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes describe_animator {
+    0% {
+        transform: translateX(42vw);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide_animator {
+    0% {
+        transform: translateX(20vw);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    50% {
+        transform: translateX(60%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes move_nav {
+    30% {
+        transform: translateX(7vw);
+    }
+
+    100% {
+        transform: translateX(20vw);
+    }
+}
+
+@keyframes moveclimbDown {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveclimbTop {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
